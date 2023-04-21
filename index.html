@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@500&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="heading">
+        <h2>STOP WATCH</h2>
+      </div>
+
+      <div class="watch-container">
+        <!-- timer -->
+        <div class="timer">
+          <h1>00 : 00 : 00</h1>
+        </div>
+
+        <!-- handel buttons -->
+        <div class="buttons">
+          <button id="btn1" onclick="startTimer()" class="btn-box">
+            <p>start</p>
+          </button>
+
+          <button id="btn2" onclick="stopTimer()" class="btn-box">
+            <p>stop</p>
+          </button>
+
+          <button id="btn3" onclick="resetTimer()" class="btn-box">
+            <p>reset</p>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

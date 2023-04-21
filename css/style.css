@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  color: white;
+}
+
+.container {
+  background-image: url(../images/pexels-pixabay-326333.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  /* margin-top: 1rem; */
+}
+
+/* heading//////////////////////////// */
+.heading {
+  text-align: center;
+  /* border: 2px solid gray; */
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-family: "Pacifico", cursive;
+  width: 80%;
+  margin: auto;
+}
+
+/* watch container //////////////////// */
+.watch-container {
+  width: 80%;
+  margin: auto;
+  height: 155px;
+  box-shadow: 0 1px 3px 2px black;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.66);
+  /* border: 2px solid red; */
+}
+
+/* timer //////////////////////*/
+.timer {
+  /* border: 2px solid red; */
+  padding-top: 6px;
+  height: 40%;
+}
+.timer h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+/* handel buttons /////////////////////// */
+.buttons {
+  width: 100%;
+  height: 44%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+}
+button {
+  width: 70px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 6px;
+  margin: 10px 0;
+  box-shadow: 0 1px 1px 1px white;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  transition: 500ms;
+}
+/* hover on buttons /////////////////////////*/
+button:hover {
+  background-color: rgba(0, 0, 0, 0.511);
+  /* box-shadow: 0 2px 3px 2px white; */
+}
+button p {
+  font-weight: bold;
+}
+
+/* hover on p ////////////////// */
+button p:hover {
+  color: rgb(103, 102, 102);
+}
+
+/* media for screen 459px */
+@media screen and (min-width: 469px) {
+  .heading {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .watch-container {
+    height: 190px;
+  }
+
+  .timer {
+    padding-top: 16px;
+  }
+
+  .buttons {
+    padding: 10px 0;
+  }
+  button {
+    width: 110px;
+    height: 35px;
+  }
+  button p {
+    font-size: 18px;
+  }
+}
+
+/* media for screen 721px */
+@media screen and (min-width: 721px) {
+  /* heading////////////// */
+  .heading {
+    padding-bottom: 1.4rem;
+  }
+  .heading h2 {
+    font-size: 2.2rem;
+  }
+
+  /* watch container */
+  .watch-container {
+    height: 230px;
+  }
+
+  /* timmer ///////////////// */
+  .timer {
+    padding-top: 10px;
+    /* border: 2px solid red; */
+  }
+  .timer h1 {
+    font-size: 3.3rem;
+    /* margin-top: 4rem; */
+  }
+
+  /* bottons /////////// */
+  .buttons {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 15px 0;
+  }
+  button {
+    width: 120px;
+    height: 40px;
+  }
+  .btn-box p {
+    font-size: 24px;
+  }
+}
+
+/* media for screen 1025px */
+@media screen and (min-width: 1025px) {
+  .heading {
+    text-align: center;
+    width: 60%;
+  }
+
+  .buttons {
+    width: 80%;
+    margin: auto;
+  }
+
+  .watch-container {
+    width: 60%;
+  }
+
+  button {
+    width: 150px;
+  }
+}
